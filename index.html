@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <h3 class="site-name">EgypTrip</h3>
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list">
+        <li><a id="firstTrip" class="menu__link" data-link="#section1">Trip 1</a></li>
+        <li><a id="secondTrip" class="menu__link" data-link="#section2">Trip 2</a></li>
+        <li><a id="thirdTrip" class="menu__link" data-link="#section3">Trip 3</a></li>
+        <li><a id="fourthTrip" class="menu__link" data-link="#section4">Trip 4</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero" style="background-image: url(images/64fc7d4e68d3c6c6bae1ccf4f83e15fe.jpg);">
+      <h1>Book Your Winter Trip In EGYPT</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Section 1" class="your-active-class" style="background-image: url(images/siwa\ oasis\ 5.jpg);">
+      <div class="landing__container">
+        <h2>Siwa Oasis</h2>
+        <h3>The time to drop out last 365 days and welcome the NewYear preparing your new year wishes and let them go to the starlit sky in the Desert ... at the most marvelous paradise in Egypt.SiwaOasis, You not only travel to a place but also, you travel back on time to the most marvelous paradise in Egypt, A unique experience to take a break from a rapid sequence of modern cities life. Throw the headache out... switch off your mind</h3>
+        <p>_ Four days / Three nights.</p>
+        <p>_ Private A/C transprtation.</p>
+        <p>Package_Includes:<p>
+        <p>- Accommodation - (4 Days / 3 Nights at Siwa Gardens Lodge )</p>
+        <p>- All mentioned Meals( 4 Breakfast - 3 Dinner - 1 picnic lunch )</p>
+        <p>- Full Day Great sand sea Safari by 4x4 Land Cruiser.</p>
+        <p>- Professional tour leader</p>
+        <p>_ PRICE: 4,350 EGP per Person in a Double Room.</p>
+      </div>
+        <div style="text-align: center;">
+        <button>See Program</button>
+        <button>Book NOW</button>
+        </div>  
+      
+    </section>
+    <section id="section2" data-nav="Section 2" style="background-image: url(images/c4.jpg);">
+      <div class="landing__container">
+        <h2>Luxor And Aswan "Nile Cruise"</h2>
+        <h3 class="headpara">Enjoy your cruise down the Nile with the MS Movenpick Royal Lily. This cruise ship offers stylish and comfortable suites, an elegant dining room, a spacious sundeck, swimming pool and other amenities. While on board, live the magic of the past and explore the wonders of the Nile as you sail between Luxor and Aswan and visiting Karnak Temple, Luxor Temple, Valley of the Kings, Temple of Queen Hatshepsut, High Dam.</h3>
+        <p class="para">_ Four days / Three nights.</p>
+        <p class="para">Package_Includes:</p>
+        <p class="para">Meet and assist service upon arrival & departure <p>
+        <p class="para">Assistance of our personnel during your stay and excursions </p>
+        <p class="para">All transfers by a modern air-conditioned deluxe vehicle</p>
+        <p class="para">Accommodation on board 5 star cruise on full board basis</p>
+        <p class="para">Entrance fees to all sights between Luxor and Aswan</p>
+        <p class="para">_ PRICE: 5,000 EGP per Person in a Double Room.</p>
+      </div>
+        <div style="text-align: center;">
+          <button>See Program</button>
+          <button>Book NOW</button>
+        </div>
+        
+      
+    </section>
+    <section id="section3" data-nav="Section 3" style="background-image: url(images/maxresdefault.jpg)">
+      <div class="landing__container">
+        <h2>Hurghada Islands Retreat</h2>
+        <h3>Get ready for your unforgettable sea safari experience to enjoy the nature and discover the beauty of the red sea! Swimming , snorkeling and just ChillOut for multiple days across the islands and coral reefs of Hurghada!</h3>
+        <p>_Four days / Three nights ( Onboard )</p>
+        <p>_Four days and three full moon overnights onboard across the islands and corals reef of Hurghada.</p>
+        <p>_Meeting dolphins in their own natural habitat at El-erk Dolphin House.<p>
+        <p>_Spending full day across Jubal Islands in front of ElGuna.</p>
+        <p>Package_Includes:</p>
+        <p>-All Inclusive Meal Plan ( 4 Breakfast - 3 Lunch - 3 Dinner )</p>
+        <p>-Disinfected snorkeling gears, Tickets & Permits.</p>
+        <p>_ PRICE:  5,700 EGP / Per person sharing a double cabin.</p>
+      </div>
+        <div style="text-align: center;">
+          <button>See Program</button>
+          <button>Book NOW</button>
+        </div>
+        
+      
+    </section>
+    <section id="section4" data-nav="Section 4" style="background-image: url(images/5a26e764512c2e29628b457d.w800.jpg);">
+      <div class="landing__container">
+        <h2>Dahab & Abu Gallum</h2>
+        <h3 class="headpara">Pack your bags NOW and join us to scout Gorgeous spots in Egypt: Ras Abu Gallum protectorate & Dahab, located right off of Aqaba Gulf...</h3>
+        <p class="para">_Four days / Three nights.</p>
+        <p class="para">_Beduin Dinner Camp at WADI GNAI.</p>
+        <p class="para">_Full Day Yacht Trip - Snorkeling.<p>
+        <p class="para">_Swimming and Snorkeling in the Blue Hole.</p>
+        <p class="para">_Snorkeling at " Ras Abu Gallum " Protected Area.</p>
+        <p class="para">_Accommodation on board 5 star cruise on full board basis</p>
+        <p class="para">Package_Includes:</p>
+        <p class="para">- Meal plan ( 4 Breakfast - 3 Dinner ),Snorkeling gears.</p>
+        <p class="para">- Private A/C bus transportation from/to Cairo.</p>
+        <p class="para">_Price: 2,300 EGP / Person sharing a Double/Triple Room.</p>
+      </div>
+        <div style="text-align: center;">
+          <button>See Program</button>
+          <button>Book NOW</button>
+        </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p id="footpara">EgypTrip @Copyright 2020/2021</p>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
