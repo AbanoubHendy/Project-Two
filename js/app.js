@@ -1,10 +1,19 @@
 // DOMContentLoaded event to sure that HTML document has been completely loaded
 document.addEventListener('DOMContentLoaded', function () {
-    function theToggle() {
-        const showNav=document.querySelector('#navbar__list');
-        showNav.classList.toggle('.menu__link');
-    };
-    theToggle();
+    //create lists of anchors 
+    const addList = document.getElementById('navbar__list');
+    const elementCrt1=document.createElement('li');
+    const elementCrt2=document.createElement('li');
+    const elementCrt3=document.createElement('li');
+    const elementCrt4=document.createElement('li');
+    elementCrt1.innerHTML ='<a id="firstTrip" class="menu__link" data-link="#section1">Trip 1</a>';
+    elementCrt2.innerHTML ='<a id="secondTrip" class="menu__link" data-link="#section2">Trip 2</a>';
+    elementCrt3.innerHTML ='<a id="thirdTrip" class="menu__link" data-link="#section3">Trip 3</a>';
+    elementCrt4.innerHTML ='<a id="fourthTrip" class="menu__link" data-link="#section4">Trip 4</a>';
+    addList.appendChild(elementCrt1);
+    addList.appendChild(elementCrt2);
+    addList.appendChild(elementCrt3);
+    addList.appendChild(elementCrt4);
 
     // scrolls to anchors from navigation,
     const trip1 =document.querySelector('#firstTrip');
